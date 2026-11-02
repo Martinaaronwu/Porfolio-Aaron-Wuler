@@ -8,9 +8,9 @@
   --lima: #baec4d;
   --tinta-b: #0b0c10;
 
-  --display: 'Archivo', Impact, 'Arial Narrow', sans-serif;
-  --texto: 'Archivo', Helvetica, Arial, sans-serif;
-  --mono: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+  --display: var(--font-archivo), Impact, 'Arial Narrow', sans-serif;
+  --texto: var(--font-archivo), Helvetica, Arial, sans-serif;
+  --mono: var(--font-mono), ui-monospace, Menlo, monospace;
 }
 
 * { box-sizing: border-box; min-width: 0; }
