@@ -216,3 +216,14 @@ p { margin: 0; max-width: 62ch; }
 @media (min-width: 900px) {
   .sobre .wrap { grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); align-items: start; }
 }
+
+/* ── Despiece del buzo ── */
+.despiece { width: 100%; height: auto; display: block; }
+.buzo .pieza { fill: #24262b; stroke: var(--blanco); stroke-width: 1.6; }
+.buzo .pieza.osc { fill: #2d3036; }
+.buzo .cos { fill: none; stroke: var(--lima); stroke-width: 1.3; stroke-dasharray: 5 4; }
+.buzo .cota { stroke: var(--gris); stroke-width: 1; }
+.buzo .cota.punt { stroke-dasharray: 2 3; }
+.buzo text { font-family: var(--mono); font-size: 17px; fill: var(--blanco); }
+.buzo text.g { fill: var(--gris); }
+.buzo .sombra { fill: #000; opacity: .35; }
