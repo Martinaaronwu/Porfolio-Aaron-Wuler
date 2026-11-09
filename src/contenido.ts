@@ -94,3 +94,48 @@ export const experiencia = {
   tareas: ['Redes', 'Atención al cliente', 'Ventas', 'Alquileres', 'Tasaciones'],
   instagram: { usuario: '@InmobiliariaImar', href: 'https://www.instagram.com/inmobiliariaimar/' },
 }
+
+export const skills = [
+  {
+    area: 'Negocio',
+    talle: 'A',
+    items: [
+      ['Ventas y alquileres', 'Imar'],
+      ['Tasaciones', 'Imar'],
+      ['Análisis de márgenes', 'Ecommerce'],
+      ['Importación desde China', 'Ecommerce'],
+      ['Mercado Libre · Tiendanube · Dropi', 'Ecommerce'],
+      ['Validación con encuestas', 'RAW'],
+    ],
+  },
+  {
+    area: 'Diseño',
+    talle: 'B',
+    items: [
+      ['Diseño de indumentaria', 'RAW'],
+      ['Techpacks y medidas', 'RAW'],
+      ['Producto y UI', 'RAW'],
+      ['Redes y atención por chat', 'Imar'],
+    ],
+  },
+  {
+    area: 'Desarrollo',
+    talle: 'C',
+    items: [
+      ['React · TypeScript', 'RAW'],
+      ['Fabric.js', 'RAW'],
+      ['Supabase (backend)', 'RAW'],
+      ['Bots de IA · Kommo CRM', 'Llavi'],
+    ],
+  },
+]
+
+export const ahora = [
+  {
+    chip: 'EN CURSO',
+    activo: true,
+    titulo: 'RAW Design',
+    texto: 'Pasar de la validación (80% lo usaría) a un producto que diseñadores usen todos los días.',
+  },
+  { chip: 'PRÓXIMO', titulo: 'Ecommerce', texto: 'Arrancar mi propio ecommerce de ropa.' },
+]

@@ -319,3 +319,45 @@ p { margin: 0; max-width: 62ch; }
   .art.exp { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
   .exp .exp-foto { height: 100%; aspect-ratio: auto; border-bottom: 0; border-right: 1px solid var(--linea); }
 }
+
+/* ── Skills (ficha técnica sobre blanco) ── */
+.skills { background: var(--blanco); color: var(--tinta-b); }
+.skills .gris { color: #55565a; }
+.skills .cab { margin-bottom: 0; }
+.tp { display: grid; grid-template-columns: minmax(0, 1fr); border: 2px solid var(--tinta-b); margin-top: 36px; }
+.tp section { padding: 20px; border-bottom: 1px solid var(--tinta-b); }
+.tp section:last-child { border-bottom: 0; }
+.tp header { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin-bottom: 14px; }
+.tp ul { list-style: none; margin: 0; padding: 0; display: grid; }
+.tp li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 0;
+  border-top: 1px dashed rgba(11, 12, 16, .3);
+  font-size: 15px;
+}
+.tp li span { font-family: var(--mono); font-size: 12px; color: #55565a; white-space: nowrap; }
+
+@media (min-width: 900px) {
+  .tp { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .tp section { border-bottom: 0; border-right: 1px solid var(--tinta-b); }
+  .tp section:last-child { border-right: 0; }
+}
+
+/* ── Ahora ── */
+.ahora .lista { display: grid; margin-top: 32px; border-top: 1px solid var(--linea); }
+.ahora .fila {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 6px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--linea);
+}
+.ahora .fila .h3.gris { color: var(--gris); }
+.chip { justify-self: start; font-family: var(--mono); font-size: 12px; padding: 4px 8px; border: 1px solid var(--linea); }
+.chip.on { background: var(--lima); color: var(--tinta-b); border-color: var(--lima); }
+
+@media (min-width: 760px) {
+  .ahora .fila { grid-template-columns: 140px minmax(0, 1fr) minmax(0, 1.4fr); align-items: baseline; gap: 24px; }
+}
