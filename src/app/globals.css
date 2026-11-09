@@ -310,3 +310,12 @@ p { margin: 0; max-width: 62ch; }
   .art.a2 { grid-column: span 4; }
   .art.a3 { grid-column: span 2; }
 }
+
+/* ── Experiencia ── */
+#experiencia { padding-bottom: 0; }
+.exp .exp-foto { width: 100%; height: auto; aspect-ratio: 960 / 330; object-fit: cover; border-bottom: 1px solid var(--linea); }
+
+@media (min-width: 900px) {
+  .art.exp { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .exp .exp-foto { height: 100%; aspect-ratio: auto; border-bottom: 0; border-right: 1px solid var(--linea); }
+}

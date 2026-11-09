@@ -2,6 +2,7 @@
 // Lo que empieza con "Completar" se muestra en gris/itálica hasta que lo reemplace.
 
 export const nav = [
+  { texto: 'Experiencia', href: '/#experiencia' },
   { texto: 'Proyectos', href: '/#proyectos' },
   { texto: 'Skills', href: '/#skills' },
   { texto: 'Ahora', href: '/#ahora' },
@@ -82,3 +83,14 @@ export const proyectos: Proyecto[] = [
     stack: ['IA', 'Kommo CRM'],
   },
 ]
+
+export const experiencia = {
+  empresa: 'Inmobiliaria Imar',
+  rol: 'Rookie · ventas y redes',
+  cuando: 'Veranos + parte de 2026',
+  foto: '/fotos/imar.webp',
+  texto:
+    'Todos los veranos, y parte de este año, trabajé en la inmobiliaria de mi mamá. Entré como rookie para aprender de ventas y me terminé especializando en las redes y en la charla con el cliente: asistencia, ventas, alquileres y tasaciones.',
+  tareas: ['Redes', 'Atención al cliente', 'Ventas', 'Alquileres', 'Tasaciones'],
+  instagram: { usuario: '@InmobiliariaImar', href: 'https://www.instagram.com/inmobiliariaimar/' },
+}
