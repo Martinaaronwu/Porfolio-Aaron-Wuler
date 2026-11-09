@@ -139,3 +139,13 @@ export const ahora = [
   },
   { chip: 'PRÓXIMO', titulo: 'Ecommerce', texto: 'Arrancar mi propio ecommerce de ropa.' },
 ]
+
+export const contacto = {
+  mail: 'aaronwuler10@gmail.com',
+  redes: [
+    { red: 'Email', texto: 'Escribime', href: 'mailto:aaronwuler10@gmail.com' },
+    { red: 'LinkedIn', texto: 'Aaron Wuler', href: 'https://www.linkedin.com/search/results/people/?keywords=aaron%20wuler' },
+    { red: 'Instagram', texto: '@aaronwuler', href: 'https://www.instagram.com/aaronwuler/' },
+    { red: 'GitHub', texto: '@martinaaronwu', href: 'https://github.com/Martinaaronwu' },
+  ],
+}

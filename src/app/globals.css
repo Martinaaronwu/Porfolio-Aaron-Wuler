@@ -361,3 +361,37 @@ p { margin: 0; max-width: 62ch; }
 @media (min-width: 760px) {
   .ahora .fila { grid-template-columns: 140px minmax(0, 1fr) minmax(0, 1.4fr); align-items: baseline; gap: 24px; }
 }
+
+/* ── Contacto ── */
+.contacto { border-top: 1px solid var(--linea); }
+.contacto .mega { font-size: clamp(56px, 15vw, 200px); margin-top: 12px; }
+.contacto .mega a { text-decoration: none; }
+.contacto .mega a:hover { color: var(--lima); }
+.contacto .mail { margin-top: 18px; font-size: 18px; }
+.redes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 36px;
+  background: var(--linea);
+  border: 1px solid var(--linea);
+}
+.redes a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  min-height: 84px;
+  padding: 16px;
+  background: var(--negro);
+  text-decoration: none;
+}
+.redes a:hover { background: var(--gris-osc); }
+.redes a b { font-size: 18px; }
+
+@media (min-width: 760px) {
+  .redes { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+footer { padding: 28px 0 40px; border-top: 1px solid var(--linea); }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
