@@ -313,10 +313,10 @@ p { margin: 0; max-width: 62ch; }
 
 /* ── Experiencia ── */
 #experiencia { padding-bottom: 0; }
-.exp .exp-foto { width: 100%; height: auto; aspect-ratio: 960 / 330; object-fit: cover; border-bottom: 1px solid var(--linea); }
+.exp .exp-foto { width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: contain; background: #000; border-bottom: 1px solid var(--linea); }
 
 @media (min-width: 900px) {
-  .art.exp { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .art.exp { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); }
   .exp .exp-foto { height: 100%; aspect-ratio: auto; border-bottom: 0; border-right: 1px solid var(--linea); }
 }
 

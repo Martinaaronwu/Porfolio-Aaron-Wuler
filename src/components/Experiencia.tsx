@@ -11,7 +11,7 @@ export default function Experiencia() {
         </div>
 
         <article className="art exp">
-          <Image className="exp-foto" src={exp.foto} alt={`Logo de ${exp.empresa}`} width={960} height={330} />
+          <Image className="exp-foto" src={exp.foto} alt={`Logo de ${exp.empresa}`} width={447} height={447} />
           <div className="info">
             <span className="num">{exp.rol}</span>
             <h3 className="h3">{exp.empresa}</h3>
