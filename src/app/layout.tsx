@@ -4,36 +4,26 @@ import Footer from '@/components/Footer'
 import { archivo, mono } from './fuentes'
 import './globals.css'
 
-const titulo = 'Aaron Wuler — Moda · Ecommerce · Software'
-const descripcion = 'Diseño ropa y programo las herramientas para hacerlo más rápido.'
-
 export const metadata: Metadata = {
-  title: {
-    default: titulo,
-    template: '%s — Aaron Wuler',
-  },
-  description: descripcion,
+  title: 'Aaron Wuler | Moda, Ecommerce y Software',
+  description: 'Diseño ropa y programo las herramientas para hacerlo más rápido.',
+  // para que se vea bien cuando paso el link por whatsapp o linkedin
   openGraph: {
-    title: titulo,
-    description: descripcion,
+    title: 'Aaron Wuler',
+    description: 'Diseño ropa y programo las herramientas para hacerlo más rápido.',
     type: 'website',
     locale: 'es_AR',
-    siteName: 'Aaron Wuler',
-  },
-  twitter: {
-    card: 'summary',
-    title: titulo,
-    description: descripcion,
   },
 }
 
+// color de la barra del navegador en el celu
 export const viewport: Viewport = {
   themeColor: '#0B0C10',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={`${archivo.variable} ${mono.variable}`} data-scroll-behavior="smooth">
+    <html lang="es" className={archivo.variable + ' ' + mono.variable} data-scroll-behavior="smooth">
       <body>
         <Nav />
         {children}

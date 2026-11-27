@@ -1,6 +1,6 @@
 import localFont from 'next/font/local'
 
-// Archivo es variable: peso 100-900 y ancho 62-125 (lo uso con font-variation-settings 'wdth')
+// archivo es variable, tiene peso y ancho (el ancho lo cambio con 'wdth' en el css)
 export const archivo = localFont({
   src: '../fonts/archivo-wdth.woff2',
   weight: '100 900',
