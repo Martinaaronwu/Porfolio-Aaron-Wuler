@@ -1,5 +1,5 @@
-// Buzo de RAW Design despiezado en módulos, con cotas.
-// Las medidas son de ejemplo.
+// el buzo de raw design separado en piezas, con medidas
+// (las medidas son inventadas, es solo para mostrar)
 export default function Buzo({ label = 'Buzo despiezado en módulos' }: { label?: string }) {
   return (
     <svg className="despiece" viewBox="0 0 640 520" role="img" aria-label={label}>

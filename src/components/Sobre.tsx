@@ -1,9 +1,4 @@
-import { perfil } from '@/contenido'
-import { falta } from './Texto'
-
 export default function Sobre() {
-  const { sobre, quienSoy, datos } = perfil
-
   return (
     <section className="sobre band" id="sobre">
       <div className="wrap">
@@ -12,23 +7,41 @@ export default function Sobre() {
             Sobre mí
           </p>
           <p className="cuerpo">
-            {sobre.antes}
-            <strong>{sobre.fuerte}</strong>
-            {sobre.despues}
+            Soy Aaron. Me muevo entre tres cosas: <strong>ropa, ecommerce y software</strong>. Lo que más me interesa
+            es donde se cruzan: diseñar la prenda, programar la herramienta que hace todo más rápido y, más adelante,
+            armar mi propia tienda online.
           </p>
           <div className="quien">
-            {quienSoy.map((p) => (
-              <p key={p}>{p}</p>
-            ))}
+            <p>
+              Me encanta aprender, pero no por aprender: aprendo de las personas, de cómo se comunican, de cómo se
+              comportan y de lo que saben. Me apasionan la psicología y el lenguaje corporal, y leer a la gente es algo
+              que me sale natural. Por eso escucho mucho.
+            </p>
+            <p>
+              También me encantan los deportes: me dan salud y me hacen bien a la cabeza. Y creo que el techo lo pone
+              cada uno. El mío no tiene límite.
+            </p>
           </div>
         </div>
+
         <dl className="datos">
-          {datos.map((d) => (
-            <div key={d.label}>
-              <dt>{d.label}</dt>
-              <dd className={falta(d.valor) ? 'falta' : undefined}>{d.valor}</dd>
-            </div>
-          ))}
+          <div>
+            <dt>Base</dt>
+            <dd>Belgrano, Buenos Aires</dd>
+          </div>
+          <div>
+            <dt>Estudio</dt>
+            <dd>5° año, ORT</dd>
+          </div>
+          <div>
+            <dt>Proyecto principal</dt>
+            <dd>RAW Design</dd>
+          </div>
+          <div>
+            <dt>Busco</dt>
+            {/* TODO: poner que busco */}
+            <dd className="falta">completar</dd>
+          </div>
         </dl>
       </div>
     </section>
