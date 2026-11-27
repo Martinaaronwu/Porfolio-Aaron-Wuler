@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { nav } from '@/contenido'
 
 export default function Nav() {
   return (
@@ -8,12 +7,20 @@ export default function Nav() {
         <Link className="logo" href="/" aria-label="Aaron Wuler, inicio">
           A<b>/</b>W
         </Link>
+        {/* en el celu se esconde, queda solo el boton */}
         <ul>
-          {nav.map((item) => (
-            <li key={item.href}>
-              <Link href={item.href}>{item.texto}</Link>
-            </li>
-          ))}
+          <li>
+            <Link href="/#experiencia">Experiencia</Link>
+          </li>
+          <li>
+            <Link href="/#proyectos">Proyectos</Link>
+          </li>
+          <li>
+            <Link href="/#skills">Skills</Link>
+          </li>
+          <li>
+            <Link href="/#ahora">Ahora</Link>
+          </li>
         </ul>
         <Link className="btn" href="/#contacto">
           Escribime

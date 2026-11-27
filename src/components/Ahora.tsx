@@ -1,6 +1,3 @@
-import { ahora } from '@/contenido'
-import { Texto } from './Texto'
-
 export default function Ahora() {
   return (
     <section className="ahora band" id="ahora">
@@ -11,13 +8,16 @@ export default function Ahora() {
           construyendo ahora
         </h2>
         <div className="lista">
-          {ahora.map((fila, i) => (
-            <div className="fila" key={i}>
-              <span className={fila.activo ? 'chip on' : 'chip'}>{fila.chip}</span>
-              <h3 className={fila.titulo === '—' ? 'h3 gris' : 'h3'}>{fila.titulo}</h3>
-              <Texto>{fila.texto}</Texto>
-            </div>
-          ))}
+          <div className="fila">
+            <span className="chip on">EN CURSO</span>
+            <h3 className="h3">RAW Design</h3>
+            <p>Pasar de la validación (80% lo usaría) a un producto que diseñadores usen todos los días.</p>
+          </div>
+          <div className="fila">
+            <span className="chip">PRÓXIMO</span>
+            <h3 className="h3">Ecommerce</h3>
+            <p>Arrancar mi propio ecommerce de ropa.</p>
+          </div>
         </div>
       </div>
     </section>

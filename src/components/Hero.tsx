@@ -1,56 +1,53 @@
 import Image from 'next/image'
-import { perfil } from '@/contenido'
 
 export default function Hero() {
-  const [antes, resaltado, despues] = perfil.frase
-
   return (
     <section className="hero" id="inicio">
       <div className="wrap">
         <h1 className="mega">
-          <span>{perfil.nombre}</span>
-          <span>{perfil.apellido}</span>
+          <span>Aaron</span>
+          <span>Wuler</span>
         </h1>
 
         <div className="hero-texto">
           <p className="tagline">
-            {antes}
-            <em>{resaltado}</em>
-            {despues}
+            Diseño ropa y <em>programo las herramientas</em> para hacerlo más rápido.
           </p>
+
           <div className="tags">
-            {perfil.tags.map((t) => (
-              <span key={t}>{t}</span>
-            ))}
+            <span>Moda</span>
+            <span>Ecommerce</span>
+            <span>Software</span>
           </div>
+
           <a className="btn" href="#proyectos">
             Ver proyectos ↓
           </a>
+
           <p className="estado">
             <i />
-            {perfil.estado}
+            Ahora: construyendo RAW Design
           </p>
         </div>
 
         <div className="retrato">
           <Image
             className="foto"
-            src={perfil.foto}
+            src="/fotos/aaron.webp"
             alt="Aaron Wuler"
             width={800}
             height={1000}
             priority
             sizes="(min-width: 900px) 320px, 90vw"
           />
+          {/* la etiqueta de la foto, como la de una prenda */}
           <div className="etiqueta">
             <span className="dato">
-              <b>AW—01</b>
+              <b>AW-01</b>
             </span>
-            {perfil.etiqueta.map((linea) => (
-              <span className="dato" key={linea}>
-                {linea}
-              </span>
-            ))}
+            <span className="dato">FOUNDER</span>
+            <span className="dato">BUENOS AIRES, BELGRANO</span>
+            <span className="dato">5° AÑO ORT</span>
           </div>
         </div>
       </div>
